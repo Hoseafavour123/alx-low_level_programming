@@ -7,7 +7,7 @@
   * Description - A program that prints strings
   * without the use of puts or printf functions
   *
-  * Return - Always 1 (Success)
+  * Return:  Always 1 (Success)
   */
 
 int main(void)
