@@ -21,12 +21,12 @@ int main(void)
 	{
 
 		putchar(min);
-		
+
 		if (min != 57)
 		{
 			putchar(',');
 			putchar(' ');
-	
+
 		}
 
 		min++;
