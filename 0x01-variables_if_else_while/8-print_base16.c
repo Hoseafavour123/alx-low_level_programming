@@ -27,7 +27,7 @@ int main(void)
 	}
 
 
-	while  (a <= 101)
+	while  (a <= 102)
 	{
 		putchar(a);
 		a++;
