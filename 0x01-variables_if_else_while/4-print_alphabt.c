@@ -14,14 +14,19 @@ int main(void)
 	int a;
 	int z;
 
-	a = 'a';
-	z = 'z';
+	a = 97;
+	z = 122;
 
 	while (a <= z)
 	{
-		if ((a != 'e') && (a != 'q'))
+		if ((a != 101) && (a != 113))
 		{
 			putchar(a);
+			a++;
+		}
+
+		else
+		{
 			a++;
 		}
 
