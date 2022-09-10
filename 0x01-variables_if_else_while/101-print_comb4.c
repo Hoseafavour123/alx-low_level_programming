@@ -11,7 +11,6 @@
 
 int main(void)
 {
-
 	int i;
 	int j;
 	int k;
@@ -19,10 +18,8 @@ int main(void)
 	i = 48;
 	j = 48;
 	k = 48;
-
 	while (i < 56)
 	{
-
 		j = i + 1;
 
 		while (j < 57)
@@ -31,7 +28,6 @@ int main(void)
 
 			while (k < 58)
 			{
-
 				putchar(i);
 				putchar(j);
 				putchar(k);
@@ -40,23 +36,18 @@ int main(void)
 				{
 					putchar(',');
 					putchar(' ');
-
 				}
 
 				k++;
 			}
 
 			j++;
-
 		}
 
 		i++;
-
 	}
 
-
 	putchar(10);
-
 
 	return (0);
 }
