@@ -25,11 +25,8 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(c);
 					_putchar(d);
+					_putchar('\n');
 
-					if ((a < 50) || (b < 51) || (c < 53) || (d < 57))
-					{
-						_putchar('\n');
-					}
 					d++;
 				}
 				c++;
