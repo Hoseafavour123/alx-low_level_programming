@@ -20,15 +20,12 @@ void jack_bauer(void)
 			{
 				while (d < 58)
 				{
-					if ((a < 50) || (b < 51) || (c < 53) || (d < 57))
-					{
-						_putchar(a);
-						_putchar(b);
-						_putchar(':');
-						_putchar(c);
-						_putchar(d);
-						_putchar(10);
-					}
+					_putchar(a);
+					_putchar(b);
+					_putchar(':');
+					_putchar(c);
+					_putchar(d);
+					_putchar(10);
 					d++;
 				}
 				c++;
