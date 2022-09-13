@@ -2,15 +2,14 @@
 
 /**
   * add - adds two numbers
-  * @i: first argument
-  * @j: second argument
+  * @a: first argument
+  * @b: second argument
   *
   * Return: result of addition
   */
 
-int add(int i, int j)
+int add(int a, int b)
 {
-	int sum = i + j;
-	return (sum);
+	return (a + b);
 }
 
