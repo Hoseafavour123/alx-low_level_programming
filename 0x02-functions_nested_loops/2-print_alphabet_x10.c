@@ -12,15 +12,14 @@ void print_alphabet_x10(void)
 	int j;
 
 	i = 1;
-	j = 97;
 
 	while (i <= 10)
 	{
-		while (j <= 122)
+		for (j = 97; j <= 122; j++)
 		{
 			_putchar(j);
-			j++;
 		}
+
 		_putchar(10);
 		i++;
 	}
