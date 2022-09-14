@@ -15,7 +15,7 @@ void print_times_table(int n)
 	{
 		if ((n < 0) || (n > 15))
 			break;
-		_putchar('0');
+		_putchar(48);
 		
 		for (j = 1; j <= n; j++)
 		{
@@ -27,7 +27,7 @@ void print_times_table(int n)
 			{
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(prod);
+				_putchar(prod + '0');
 			}
 
 			else if ((prod > 9) && (prod <= 99))
