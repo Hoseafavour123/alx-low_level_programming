@@ -16,38 +16,33 @@ void print_times_table(int n)
 		if ((n > 15) || (n < 0))
 			break;
 		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
 		for (j = 1; j <= n; j++)
 		{
 			prod = (i * j);
 			if (prod <= 9)
 			{
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(prod + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
 			}
 			else if ((prod > 9) && (prod <= 99))
 			{
+				_putchar(' ');
 				_putchar((prod / 10) + '0');
 				_putchar((prod % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 			}
 			else if (prod >= 100)
 			{
 				ldgt = prod % 10;
 				prod = prod / 10;
-
 				if (prod >= 10)
 				{
 					_putchar((prod / 10) + '0');
 					_putchar((prod % 10) + '0');
 				}
 				_putchar(ldgt);
-				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
