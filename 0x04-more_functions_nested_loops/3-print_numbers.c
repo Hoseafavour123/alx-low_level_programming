@@ -14,7 +14,7 @@ void print_numbers(void)
 	i = 48;
 	j = 57;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 48; j <= 57; i++)
 	{
 		_putchar(i);
 	}
