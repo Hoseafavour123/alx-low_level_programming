@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * most_numbers - print 10 times the numbers from 0-14
+  * more_numbers - print 10 times the numbers from 0-14
   *
   * Return: void
   */
