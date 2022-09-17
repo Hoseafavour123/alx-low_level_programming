@@ -9,24 +9,24 @@
 
 int main(void)
 {
-	long i, j, next, max, sum, countr;
+	int i, j, next, max, sum;
 
 	i = 1;
 	j = 2;
 	sum = 0;
 	max = 4000000;
 
-	for (countr = 1; countr < max; countr++)
+	while (j < max)
 	{
-		if (i % 2 == 0)
-			sum += i;
+		if (j % 2 == 0)
+			sum += j;
 		next = i + j;
 		i = j;
 		j = next;
 
 	}
 
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 
 	return (0);
 }
