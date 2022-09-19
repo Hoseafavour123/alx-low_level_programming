@@ -17,13 +17,14 @@ void puts2(char *str)
 	while (str[i])
 	{
 		len += 1;
+		i++;
 	}
 
-	len = len - 1;
 
-	for (j = 0; j <= len; (j += 2))
+	for (j = 0; j < len; j++)
 	{
-		_putchar(*(str + j));
+		if (j % 2 == 0)
+			_putchar(*(str + j));
 	}
 
 	_putchar(10);
