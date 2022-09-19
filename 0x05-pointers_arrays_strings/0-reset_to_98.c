@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** reset_to_98 - takes an int pointer and updates to 98
+/**
+  * reset_to_98 - takes an int pointer and updates to 98
   * @n: pointer argument
   *
   * Return: void
