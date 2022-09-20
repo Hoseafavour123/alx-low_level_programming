@@ -6,12 +6,12 @@
   * @src: the source array
   * @dest: destination array
   *
-  * Return: copied array
+  * Return: pointer to destination array
   */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, len;
+	int i;
 
 	i = 0;
 	while (src[i] != '\0')
