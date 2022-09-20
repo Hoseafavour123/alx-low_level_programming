@@ -11,7 +11,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, j, len;
+	int i, len;
 
 	i = 0;
 	len = 0;
@@ -27,11 +27,6 @@ char *_strcpy(char *dest, char *src)
 	}
 
 	dest[i] = '\0';
-
-	for (j = 0; j < len; j++)
-	{
-		_putchar(dest[j]);
-	}
 
 	_putchar(10);
 
