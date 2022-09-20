@@ -14,23 +14,17 @@ char *_strcpy(char *dest, char *src)
 	int i, len;
 
 	i = 0;
-	len = 0;
-	while (src[i])
-	{
-		len += 1;
-		i++;
-	}
-
-	for (i = 0; i < len; i++)
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
+		i++;
 	}
 
 	dest[i] = '\0';
 
 	_putchar(10);
 
-	return (0);
+	return (dest);
 }
 
 
