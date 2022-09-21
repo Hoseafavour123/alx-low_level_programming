@@ -5,24 +5,21 @@
  *  @s1: first param
  *  @s2: second param
  *
- *  Return: 0, -1 or 1
+ *  Return: 0, a value greater than or less than 0
  */
 
 int _strcmp(char *s1, char *s2)
 {
-    int i;
+	int i = 0;
+	int dif = 0;
 
-    for (i = 0; s1[i] && s2[i]; i++)
-    {
-	if (s1[i] == s2[i])
-	    continue;
+	while (s1[i])
+	{
+		if (s1[i] != s2[i])
+			dif = s1[i] - s2[i];
 
-	else if (s1[i] > s2[i])
-	    return (1);
+		i++;
+	}
 
-	else if (s1[i] < s2[i])
-	    return (-1);
-    }
-
-    return (0);
+	return (dif);
 }
