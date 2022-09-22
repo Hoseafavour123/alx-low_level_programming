@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * print_number - prints the number passed to it
-  * @n: argument
-  *
-  * Return: void
-  */
+ * print_number - prints the number passed to it
+ * @n: argument
+ *
+ * Return: void
+ */
 
 void print_number(int n)
 {
@@ -23,6 +23,6 @@ void print_number(int n)
 	}
 
 	_putchar((num % 10) + '0');
-	
+
 }
 
