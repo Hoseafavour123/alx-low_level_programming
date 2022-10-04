@@ -11,14 +11,15 @@
 
 int _strlen(char *s)
 {
-	int i = 0;
+	int i = 0, j = 0;
 
 	while (*(s + i))
 	{
+		j += 1;
 		i++;
 	}
 
-	return (i);
+	return (j);
 }
 
 /**
