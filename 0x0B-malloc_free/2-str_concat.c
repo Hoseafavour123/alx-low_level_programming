@@ -11,15 +11,14 @@
 
 int _strlen(char *s)
 {
-	int i = 0, j = 0;
+	int i = 0;
 
 	while (*(s + i))
 	{
-		j += 1;
 		i++;
 	}
 
-	return (j);
+	return (i);
 }
 
 /**
@@ -38,10 +37,12 @@ char *str_concat(char *s1, char *s2)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
-	if ((s1 == NULL) || (s2 == NULL) || ((s1 == NULL) && (s2 == NULL)))
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	ptr = (char *) malloc((len1 + len2) * sizeof(char));
+	ptr = (char *) malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (ptr == NULL)
 		return (NULL);
