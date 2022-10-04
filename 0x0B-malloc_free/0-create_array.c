@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -17,7 +18,9 @@ char *create_array(unsigned int size, char c)
 
 	ptr = (char *) malloc(size * sizeof(char));
 	if (ptr == NULL)
-		return (NULL);
+	{
+		printf("failed to allocate memory\n");
+	}
 	for (i = 0; i < size; i++)
 	{
 		*(ptr + i) = c;
