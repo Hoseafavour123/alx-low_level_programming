@@ -53,15 +53,15 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++, k++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
-			arg_str[k] = av[i][j];
+			arg_str[k++] = av[i][j];
 		}
 
-		arg_str[k] = '\n';
+		arg_str[k++] = '\n';
 	}
 
-	arg_str[k] = '\0';
+	arg_str[arg_len(ac, av)] = '\0';
 
 	return (arg_str);
 }
