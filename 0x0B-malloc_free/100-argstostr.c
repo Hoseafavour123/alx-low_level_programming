@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 	int i, j, k = 0;
 	char *arg_str;
 
-	if (ac == 0 || av == '\0')
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	arg_str = (char *) malloc(arg_len(ac, av) * sizeof(char));
