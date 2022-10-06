@@ -18,23 +18,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	alloc_mem = (void *) malloc(size * nmemb);
+	
+	if (alloc_mem == NULL)
+		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-	{
-		(alloc_mem + i) = (void *) malloc(size);
-		if ((alloc_mem + i) == NULL)
-		{
-			for (j = i; j >= 0; j--)
-			{
-				free(alloc_mem + j);
-			}
-
-			free(alloc_mem);
-			return (NULL);
-		}
-	}
-
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (nmemb * size); i++)
 	{
 		alloc_mem[i] = 0;
 	}
