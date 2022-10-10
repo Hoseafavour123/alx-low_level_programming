@@ -1,13 +1,5 @@
-#ifndef STRUCT_DOG_H
-#define STRUCT_DOG_H
-
-
-/**
-  * dog_t - Type def for struct dog
-  */
-
-typedef struct dog dog_t;
-
+#ifndef DOG_H
+#define DOG_H
 
 /**
   * struct dog - a dog's data type
@@ -20,9 +12,8 @@ typedef struct dog dog_t;
 
 struct dog
 {
-
 	char *name;
-	int age;
+	float age;
 	char *owner;
 };
 
