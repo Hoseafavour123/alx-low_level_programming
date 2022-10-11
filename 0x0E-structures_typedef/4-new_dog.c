@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 
 /**
   * _strlen - computes the length of a string
@@ -69,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	my_dog->owner = malloc(_strlen(owner) * sizeof(char));
-	if (my_dog->owner == NULLL)
+	if (my_dog->owner == NULL)
 	{
 		free(my_dog->name);
 		free(my_dog);
