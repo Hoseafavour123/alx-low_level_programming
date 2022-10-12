@@ -27,15 +27,15 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
 	funcptr = get_op_func(argv[2]);
 	if (funcptr == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	printf("%d\n", funcptr(a, b));
 
