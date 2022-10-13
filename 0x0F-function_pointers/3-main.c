@@ -13,6 +13,8 @@
 int main(int argc, char **argv)
 {
 	int (*funcptr)(int, int);
+	int a, b;
+	char *ptr;
 
 	if (argc != 4)
 	{
@@ -26,19 +28,23 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
+	a = atoi(argv[1]);
+	ptr = argv[2];
+	b = atoi(argv[3]);
+
 	funcptr = get_op_func(argv[2]);
 	if (funcptr == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((argv[2] == '/' && argv[3] == '0') || (argv[2] == '%' && argv[3] == '0'))
+	if ((*ptr== '/' && b == 0) || (*ptr == '%' && b == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", funcptr(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", funcptr(a, b));
 
 	return (0);
 }
