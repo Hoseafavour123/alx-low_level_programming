@@ -12,7 +12,6 @@
 
 int main(int argc, char **argv)
 {
-	int (*funcptr)(int, int);
 	int a, b;
 	char *ptr;
 
@@ -22,18 +21,11 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	if (argv[2][1] != '\0')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
 	a = atoi(argv[1]);
 	ptr = argv[2];
 	b = atoi(argv[3]);
 
-	funcptr = get_op_func(argv[2]);
-	if (funcptr == NULL)
+	if (get_op_func(ptr) == NULL || ptr[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -44,7 +36,7 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	printf("%d\n", funcptr(a, b));
+	printf("%d\n", get_op_func(ptr)(a, b));
 
 	return (0);
 }
