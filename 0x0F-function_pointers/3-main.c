@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*ptr== '/' && b == 0) || (*ptr == '%' && b == 0))
+	if ((*ptr == '/' && b == 0) || (*ptr == '%' && b == 0))
 	{
 		printf("Error\n");
 		exit(100);
