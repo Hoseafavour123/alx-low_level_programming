@@ -51,11 +51,10 @@ void print_all(const char * const format, ...)
 
 				printf("%s", str);
 			}
+			if (i < j)
+				printf(" ");
 
 		}
-
-		if (i < j)
-			printf(" ");
 
 		i++;
 	}
