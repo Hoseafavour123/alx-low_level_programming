@@ -55,7 +55,7 @@ void print_all(const char * const format, ...)
 		}
 
 		if (i < j)
-			printf(", ");
+			printf(" ");
 
 		i++;
 	}
