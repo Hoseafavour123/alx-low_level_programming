@@ -52,9 +52,10 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 			}
 
-			if ((i < j) && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
-				printf(", ");
 		}
+
+		if ((i < j) && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+			printf(", ");
 
 		i++;
 	}
