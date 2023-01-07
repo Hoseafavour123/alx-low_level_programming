@@ -26,11 +26,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		if (idx == match)
 		{
-			new->prev = previous;
-			new->next = current;
-
 			previous->next = new;
 			current->prev = new;
+
+			new->prev = previous;
+			new->next = current;
 
 			return (new);
 		}
